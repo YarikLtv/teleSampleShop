@@ -12,7 +12,7 @@ dispatcher = updater.dispatcher
 
 #start function
 def start(bot, update):
-    bot.send_message(chat_id=update.message.chat_id, text='Use: \n /list - to check out the list of available products! \n /product1 - to check out product1! \n /product2 - to check out product2!')
+    bot.send_message(chat_id=update.message.chat_id, text='Use: \n /list - to check out the list of available products!')
 #start command
 start_handler = CommandHandler('start', start)
 dispatcher.add_handler(start_handler)
